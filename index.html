@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Janhavi Vijay Chavhan | Complete Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4f46e5, #9333ea);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .profile-pic {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      color: #4f46e5;
+      margin-bottom: 25px;
+      box-shadow: 0 0 0 8px rgba(255,255,255,0.3);
+      animation: pulse 2.5s infinite;
+    }
+    .profile-pic img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 8px rgba(255,255,255,0.3); }
+      50% { box-shadow: 0 0 0 18px rgba(255,255,255,0.15); }
+      100% { box-shadow: 0 0 0 8px rgba(255,255,255,0.3); }
+    }
+
+    header h1 { font-size: 3rem; margin: 10px 0; }
+    .typing { font-size: 1.25rem; margin-bottom: 20px; }
+
+    .btn {
+      background: white;
+      color: #4f46e5;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover { transform: scale(1.1); background: #eef2ff; }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 90px 20px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      color: #4f46e5;
+      margin-bottom: 35px;
+    }
+
+    h2::after {
+      content: '';
+      width: 70px;
+      height: 4px;
+      background: #9333ea;
+      display: block;
+      margin-top: 12px;
+      border-radius: 10px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 35px;
+      box-shadow: 0 25px 55px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 35px 70px rgba(0,0,0,0.15);
+    }
+
+    .skills span {
+      display: inline-block;
+      padding: 12px 22px;
+      margin: 10px;
+      border-radius: 25px;
+      background: linear-gradient(135deg, #eef2ff, #ddd6fe);
+      color: #3730a3;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .skills span:hover {
+      background: linear-gradient(135deg, #4f46e5, #9333ea);
+      color: white;
+      transform: scale(1.15);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 35px;
+    }
+
+    body::before, body::after {
+      content: '';
+      position: fixed;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #c7d2fe, transparent);
+      z-index: -1;
+      animation: float 10s infinite alternate;
+    }
+
+    body::after {
+      background: radial-gradient(circle, #ddd6fe, transparent);
+      bottom: -160px;
+      right: -160px;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(60px); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="profile-pic"><img src="janhavi.img.jpeg"></div>
+  <h1>Janhavi Vijay Chavhan</h1>
+  <div class="typing" id="typing"></div>
+  <a href="#contact" class="btn">Contact Me</a>
+</header>
+
+<section class="reveal">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am a dedicated Computer Engineering student at Government Polytechnic, Amravati. I have strong foundational knowledge in programming, databases, and IoT technologies. I enjoy building practical projects and continuously improving my technical and professional skills.</p>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Technical Skills</h2>
+  <div class="card skills">
+    <span>C Programming</span><span>C++</span><span>Core Java</span><span>Advanced Java</span>
+    <span>DBMS</span><span>IoT</span>
+    <span>HTML</span><span>CSS</span><span>Basic JavaScript</span>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>IoT Smart System</h3>
+      <p>Developed an IoT-based system using Arduino and NodeMCU to monitor sensor data and control devices remotely.</p>
+    </div>
+    <div class="card">
+      <h3>Java Student Management System</h3>
+      <p>Console-based Java application to manage student records with CRUD operations and database connectivity.</p>
+    </div>
+    <div class="card">
+      <h3>DBMS Mini Project</h3>
+      <p>Designed relational database schema and implemented queries to manage structured data efficiently.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Internship Experience</h2>
+  <div class="card">
+    <h3>MDB Electrosoft Pvt. Ltd.</h3>
+    <p><strong>Duration:</strong> June 2024 – July 2024</p>
+    <ul>
+      <li>Worked on Arduino programming and sensor interfacing</li>
+      <li>Developed IoT applications using NodeMCU</li>
+      <li>Gained hands-on experience in real-world project development</li>
+    </ul>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Certifications</h2>
+  <div class="card">
+    <ul>
+      <li>Advanced Java – Compilers Classes (2024)</li>
+      <li>Core Java – Compilers Classes (2024)</li>
+      <li>C Programming – Compilers Classes (2023)</li>
+      <li>C++ Programming – Compilers Classes (2023)</li>
+      <li>DBMS – Compilers Classes (2024)</li>
+    </ul>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Achievements & Activities</h2>
+  <div class="card">
+    <ul>
+      <li>Coordinator – ISTE EXPRESS-2K24</li>
+      <li>Winner – YUVAAN 2025 Fancy Dress Competition</li>
+      <li>Active participant in technical and cultural events</li>
+    </ul>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Education</h2>
+  <div class="card">
+    <p><strong>Diploma in Computer Engineering</strong></p>
+    <p>Government Polytechnic, Amravati</p>
+  </div>
+</section>
+
+<section class="reveal" id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: janhavi.v.chavhan@gmail.com</p>
+    <p>Location: Amravati, Maharashtra</p>
+    <a href="resume.pdf" class="btn">Download Resume (PDF)</a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Janhavi Vijay Chavhan | Complete Portfolio
+</footer>
+
+<script>
+  const roles = ['Computer Engineering Student'];
+  let r = 0, c = 0, del = false;
+  const el = document.getElementById('typing');
+
+  function typeEffect() {
+    if (!del && c <= roles[r].length) {
+      el.textContent = roles[r].substring(0, c++);
+    } else if (del && c >= 0) {
+      el.textContent = roles[r].substring(0, c--);
+    }
+    if (c === roles[r].length) del = true;
+    if (del && c === 0) { del = false; r = (r + 1) % roles.length; }
+    setTimeout(typeEffect, 120);
+  }
+  typeEffect();
+
+  ScrollReveal().reveal('.reveal', { distance: '70px', duration: 1200, origin: 'bottom', interval: 200 });
+</script>
+
+</body>
+</html>
